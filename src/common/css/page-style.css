@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: abhaya;
+}
+
+.head-line {
+    color: #001858;
+}
+
+.paragraph {
+    color: #172C66;
+}
+
+h1{
+    font-size: 45px;
+    font-style: bold;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 25px;
+}
+
+h5{
+    font-size: 22px;
+}
+
+@font-face {
+    font-family: abhaya;
+    src: url("../font/AbhayaLibre-Regular.ttf");
+}
