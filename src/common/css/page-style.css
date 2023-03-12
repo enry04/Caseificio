@@ -7,6 +7,10 @@
     font-family: abhaya;
 }
 
+body{
+    background-color: #FEF6E4;
+}
+
 .head-line {
     color: #001858;
 }
@@ -15,7 +19,7 @@
     color: #172C66;
 }
 
-h1{
+h1 {
     font-size: 45px;
     font-style: bold;
 }
@@ -24,16 +28,21 @@ h2 {
     font-size: 32px;
 }
 
-h3{
+h3 {
     font-size: 30px;
 }
 
-h4{
+h4 {
     font-size: 25px;
 }
 
-h5{
+h5 {
     font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: #001858;
 }
 
 @font-face {

@@ -1,0 +1,31 @@
+header {
+    background-color: #FEF6E4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 65px 0 65px;
+}
+
+.logo-container {
+    background: url("../imgs/logo.png");
+    width: 94.5px;
+    height: 81px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.center-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 125px;
+}
+
+
+.active-page,
+a:hover {
+    color: #001858;
+    text-decoration: underline #001858;
+    text-underline-offset: 6px;
+}
