@@ -1,0 +1,42 @@
+main {
+    background: url("../../common/imgs/main-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 596px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.title-text {
+    text-align: center;
+}
+
+.explore-btn {
+    background-color: #F3D2C1;
+    height: 72px;
+    width: 359.21px;
+    border-radius: 5px;
+    border: solid 1px #001858;
+    font-size: 38px;
+    color: #001858;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 24, 88, 0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0, 24, 88, 0.25);
+}
+
+section{
+    background-color: #F3D2C1;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title{
+    margin-top: 50px;
+    font-style: bold;
+    text-align: center;
+}

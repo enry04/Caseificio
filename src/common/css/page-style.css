@@ -2,13 +2,23 @@
 *::after,
 *::before {
     padding: 0;
+    margin: 0;
     border: 0;
     box-sizing: border-box;
     font-family: abhaya;
 }
 
-body{
+body {
     background-color: #FEF6E4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #001858;
 }
 
 .head-line {
