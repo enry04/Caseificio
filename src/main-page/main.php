@@ -25,8 +25,8 @@
             <input type="button" class="explore-btn" value="Esplora">
         </section>
         <section class="secondary-section">
-            <div class="section-title">
-                <h2 class="section-title">Sito costantemente aggiornato <br> 24 ore su 24!</h2>
+            <div class="title-container">
+                <h2>Sito costantemente aggiornato <br> 24 ore su 24!</h2>
                 <h5>La quantità di latte raccolto e usato per la creazione<br> di formaggio viene aggiunto ogni giorno!</h5>
             </div>
             <div class="cards-container">

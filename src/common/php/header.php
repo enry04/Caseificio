@@ -1,4 +1,4 @@
-<header>
+<header class="page-header">
     <div class="logo-container"></div>
     <div class="center-header-container">
         <h3 class="head-line">
