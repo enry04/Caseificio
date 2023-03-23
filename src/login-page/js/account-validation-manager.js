@@ -30,7 +30,7 @@ class AccountValidationManager {
             FetchUtil.postData("./php/check-user.php", formData).then((response) => {
                 if (response.status == "success") {
                     this.elements.form.reset();
-                    location.href = "";
+                    location.href = "../main-page/main.php";
 
                 } else {
                     this.elements.error.textContent = "Credenziali errate";

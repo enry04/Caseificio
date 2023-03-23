@@ -15,6 +15,7 @@
 
 <body>
     <?php
+    require_once("../common/php/token-manager.php");
     $page = "login";
     $active = 'class="active-page"';
     require_once('../common/php/header.php');
@@ -24,9 +25,6 @@
             <h3>
                 Login
             </h3>
-            <h5 class="error-info">
-
-            </h5>
             <div class="form-container">
                 <form method="post">
                     <div class="input-container">
@@ -40,8 +38,12 @@
                     <input type="submit" class="submit-btn" value="Conferma">
                 </form>
             </div>
+            <h5 class="error-info">
+
+            </h5>
         </section>
     </main>
+    <script src="../login-page/js/login-view.js" type="module"></script>
 </body>
 
 </html>

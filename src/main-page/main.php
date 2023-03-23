@@ -14,6 +14,7 @@
 
 <body>
     <?php
+    require_once("../common/php/token-manager.php");
     $page = "main";
     $active = 'class="active-page"';
     require_once('../common/php/header.php');

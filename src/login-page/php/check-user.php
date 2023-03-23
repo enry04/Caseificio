@@ -11,7 +11,7 @@ $data = json_decode($json);
 $username = $data->username;
 $password = $data->password;
 
-$query = $pdo->prepare('SELECT * FROM tUtente WHERE nomeUtente=:username AND password=:password');
+$query = $pdo->prepare('SELECT * FROM tAccount WHERE nomeUtente=:username AND password=:password');
 $query->execute(['username' => $username, 'password' => $password]);
 $userData = $query->fetch();
 $result = null;
