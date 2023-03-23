@@ -11,24 +11,7 @@
             <a <?= ($page == "dairy") ? $active : '' ?> class="header-option" href="../dairies-page/dairies.php"> I nostri caseifici </a>
         </h3>
     </div>
-    <h3 class="popUp-block head-line">
-        Account
-        <input type="checkbox" class="option-btn">
-        <div class="popUp-menu-container hide">
-            <div class="popUp-arrow">
-            </div>
-            <div class="popUp-inner">
-                <div class="popUp-line">
-                    <h4 class="popUp-btn">
-                        <a href="">Accedi</a>
-                    </h4>
-                </div>
-                <div class="popUp-line">
-                    <h4 class="popUp-btn">
-                        <a href="">Registrati</a>
-                    </h4>
-                </div>
-            </div>
+    <h3 class="head-line">
+        <a <?= ($page == "dairy") ? $active : '' ?> class="header-option" href="../login-page/login-page.php"> Area riservata </a>
     </h3>
-    <script src="../common/js/popup-manager.js" type="module"></script>
 </header>

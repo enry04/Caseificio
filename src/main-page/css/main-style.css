@@ -1,3 +1,4 @@
+
 .main-section {
     background: url("../../common/imgs/main-img.png");
     background-position: center;
@@ -36,6 +37,7 @@
     background-color: #F3D2C1;
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
 }
 
 .title-container {
@@ -73,4 +75,43 @@
     height: 351px;
     border-radius: 4px;
     background-color: #fef6e4;
+}
+
+.card-header {
+    position: relative;
+    margin-top: 50px;
+}
+
+.card-header h3 {
+    position: absolute;
+    left: 100px;
+}
+
+.cheese-logo-container {
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    background: url("../../common/imgs/cheese-icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 97px;
+    height: 44.97px;
+}
+
+.milk-logo-container {
+    position: absolute;
+    top: -32px;
+    right: 20px;
+    background: url("../../common/imgs/milk-icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 97px;
+    height: 97px;
+}
+
+.card h5 {
+    padding: 20px;
+    margin-top: 150px;
 }
