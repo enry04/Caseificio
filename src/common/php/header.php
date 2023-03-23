@@ -12,6 +12,6 @@
         </h3>
     </div>
     <h3 class="head-line">
-        <a <?= ($page == "dairy") ? $active : '' ?> class="header-option" href="../login-page/login-page.php"> Area riservata </a>
+        <a <?= ($page == "login") ? $active : '' ?> class="header-option" href="../login-page/login.php"> Area riservata </a>
     </h3>
 </header>
