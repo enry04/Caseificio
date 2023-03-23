@@ -8,7 +8,6 @@
     <title>Caseificio</title>
     <link rel="stylesheet" href="../common/css/page-style.css">
     <link rel="stylesheet" href="../common/css/header-style.css">
-    <link rel="stylesheet" href="../common/css/popup-style.css">
     <link rel="stylesheet" href="./css/main-style.css">
     <link rel="icon" href="../common/imgs/logo.png">
 </head>
