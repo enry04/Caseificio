@@ -1,17 +1,17 @@
 import FetchUtil from "../../common/js/fetch-util.js";
 
-class AccountValidationManager{
-    constructor(parentElement){
+class AccountValidationManager {
+    constructor(parentElement) {
         this.rootElement = parentElement;
         this.elements = {};
     }
 
-    init(){
+    init() {
         this.initElements();
         this.initEventListeners();
     }
 
-    initElements(){
+    initElements() {
         this.elements = {
             username: this.rootElement.querySelector(".username-text"),
             password: this.rootElement.querySelector(".password-text"),
@@ -20,19 +20,19 @@ class AccountValidationManager{
         }
     }
 
-    initEventListeners(){
+    initEventListeners() {
         this.elements.form.addEventListener("submit", (event) => {
             event.preventDefault();
             const formData = {
                 username: this.elements.username.value,
                 password: this.elements.password.value
             }
-            FetchUtil.postData("./php/check-user.php",formData).then((response) => {
-                if(response.status == "success") {
+            FetchUtil.postData("./php/check-user.php", formData).then((response) => {
+                if (response.status == "success") {
                     this.elements.form.reset();
                     location.href = "";
-                
-                }else{
+
+                } else {
                     this.elements.error.textContent = "Credenziali errate";
                 }
             })
