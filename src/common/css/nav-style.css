@@ -1,5 +1,6 @@
 .nav-container {
-    background: #ff8906;
+    background: #f3d2c1;
+    box-shadow: -8px 0px 15px -2px #F3D2C1;
     height: 100%;
     position: fixed;
     z-index: 1;
