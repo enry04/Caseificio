@@ -10,6 +10,7 @@
 
 body {
     background-color: #FEF6E4;
+    transition: all 0.5s;
 }
 
 h1,

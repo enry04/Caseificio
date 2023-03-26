@@ -28,4 +28,5 @@
     color: #001858;
     text-decoration: underline #001858;
     text-underline-offset: 6px;
+    cursor: pointer;
 }

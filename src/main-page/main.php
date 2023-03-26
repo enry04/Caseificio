@@ -8,6 +8,7 @@
     <title>Caseificio</title>
     <link rel="stylesheet" href="../common/css/page-style.css">
     <link rel="stylesheet" href="../common/css/header-style.css">
+    <link rel="stylesheet" href="../common/css/nav-style.css">
     <link rel="stylesheet" href="./css/main-style.css">
     <link rel="icon" href="../common/imgs/logo.png">
 </head>
@@ -21,7 +22,7 @@
     ?>
     <main>
         <section class="main-section">
-            <h1 class="title-text">I migliori caseifici di <br> tutta l' Italia</h1>
+            <h1 class="title-text">I migliori caseifici di <br> tutta Italia</h1>
             <input type="button" class="explore-btn" value="Esplora">
         </section>
         <section class="secondary-section">
