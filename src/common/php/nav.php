@@ -4,7 +4,7 @@
     if ($_COOKIE['user_type'] == 'caseificio') {
     ?>
         <h4 class="nav-text head-line">
-            <a href="">Registra latte</a>
+            <a <?= ($page == "milk") ? $active : '' ?> href="../milk-page/milk.php">Registra latte</a>
         </h4>
         <h4 class="nav-text head-line">
             <a href="">Registra forma</a>

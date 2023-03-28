@@ -43,7 +43,8 @@ form {
 }
 
 input:valid~span,
-input:focus~span {
+input:focus~span,
+input:disabled~span {
     color: #272343;
     transform: translateY(-44px);
     font-size: 0.9em;
@@ -84,6 +85,7 @@ input[type="time"] {
 
 input[type="date"]:focus,
 input[type="date"]:valid,
+input[type="date"]:disabled,
 input[type="time"]:focus,
 input[type="time"]:valid {
     color: #272343;
@@ -99,6 +101,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 input:hover,
 input:not(input[type="submit"]):focus,
 input:not(input[type="submit"]):valid,
+input:not(input[type="submit"]):disabled,
 select:hover,
 select:focus,
 select:valid,

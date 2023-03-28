@@ -21,7 +21,7 @@ if ($userData != null) {
         'data' => $userData,
         'status' => "success",
     );
-    TokenManager::authenticate($userData['id'], $userData['tipologia']);
+    TokenManager::authenticate($userData['id'], $userData['tipologia'], $userData['idCaseificio']);
 } else {
     $result = array(
         'data' => null,

@@ -22,8 +22,23 @@
     ?>
     <main>
         <section class="main-section">
-            <h1 class="title-text">I migliori caseifici di <br> tutta Italia</h1>
-            <input type="button" class="explore-btn" value="Esplora">
+            <?php
+            if (TokenManager::isAuthenticated()) {
+                if ($_COOKIE['user_type'] == 'caseificio') {
+            ?>
+                    <h1 class="title-text">Benvenuto nell' area riservata <br> del caseificio!</h1>
+                    <input type="button" class="main-btn operations-btn" value="Operazioni">
+                <?php
+                }
+                ?>
+            <?php
+            } else {
+            ?>
+                <h1 class="title-text">I migliori caseifici di <br> tutta Italia</h1>
+                <input type="button" class="main-btn explore-btn" value="Esplora">
+            <?php
+            }
+            ?>
         </section>
         <section class="secondary-section">
             <div class="title-container">
@@ -44,7 +59,7 @@
                             <div class="milk-logo-container"></div>
                             <h3>Il latte impiegato</h3>
                         </header>
-                        <h5>Nella giornata di oggi sono stati  utilizzati 132 litri di latte di ottima qualità per produrre un formaggio unico in tutta Italia!  </h5>
+                        <h5>Nella giornata di oggi sono stati utilizzati 132 litri di latte di ottima qualità per produrre un formaggio unico in tutta Italia! </h5>
                     </div>
                 </div>
                 <div class="row">
@@ -67,4 +82,5 @@
         </section>
     </main>
 </body>
+
 </html>

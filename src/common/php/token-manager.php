@@ -15,22 +15,26 @@ class TokenManager
         TokenManager::unauthenticate();
         unset($_SESSION['user_id']);
         unset($_SESSION['user_type']);
+        unset($_SESSION['dairy_id']);
         setcookie("user_id", "", time() - (60*10), '/');
         setcookie('user_type', "", time() - (60*10), '/');
+        setcookie("dairy_id", "", time() - (60*10), '/');
         header("Location: ../../../index.php");
         exit;
     }
 
-    static function authenticate($userId, $userType)
+    static function authenticate($userId, $userType, $dairyId)
     {
         setcookie('user_id', $userId, time() + (60*60), '/');
         setcookie('user_type', $userType, time() + (60*60), '/');
+        setcookie('dairy_id', $dairyId, time() + (60*60), '/');
     }
 
     static function unauthenticate()
     {
         setcookie("user_id", "", time() - (60*10), '/');
         setcookie('user_type', "", time() - (60*10), '/');
+        setcookie("dairy_id", "", time() - (60*10), '/');
     }
 
     static function isAuthenticated()
