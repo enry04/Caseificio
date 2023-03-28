@@ -9,8 +9,8 @@
         <h4 class="nav-text head-line">
             <a href="">Registra forma</a>
         </h4>
-        <h4 class="nav-text head-line logout-btn">
-            Logout
+        <h4 class="nav-text head-line">
+            <a href="../common/php/logout.php">Logout</a>
         </h4>
     <?php
     } else if ($_COOKIE['user_type'] == 'consorzio') {
@@ -21,8 +21,8 @@
         <h4 class="nav-text head-line">
             <a href="">Registra vendita</a>
         </h4>
-        <h4 class="nav-text head-line logout-btn">
-            Logout
+        <h4 class="nav-text head-line">
+            <a href="../common/php/logout.php">Logout</a>
         </h4>
     <?php
     }
