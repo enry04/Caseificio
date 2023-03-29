@@ -79,7 +79,7 @@ input[type="date"],
 input[type="time"] {
     color: transparent;
     text-align: center;
-    font-size: 17px;
+    font-size: 1.2em;
     cursor: pointer;
 }
 
@@ -111,28 +111,43 @@ textarea:valid {
     box-shadow: 0 5px 15px -10px rgba(31, 18, 53, 0.6);
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input:not(.quantity-number)::-webkit-outer-spin-button,
+input:not(.quantity-number)::-webkit-inner-spin-button {
     -webkit-appearance: none;
     appearance: none;
     margin: 0;
 }
 
 select {
-    border: #272343 solid 1px;
-    width: 400px;
+    width: 350px;
     color: #272343;
     height: 45px;
     font-size: 1.2em;
     text-align: center;
     padding: 0 10px 0 10px;
-    background-color: #e3f6f5;
-    border-radius: 5px;
-    margin-bottom: 15px;
+    background-color: #F3D2C1;
+    border-radius: 10px;
     cursor: pointer;
     outline: 0;
 }
 
 .error-info {
     color: red;
+}
+
+.info-text{
+    color: #8aa972;
+    transition: all 1s;
+}
+
+.hide-info{
+    opacity: 0;
+}
+
+.show-info{
+    opacity: 1;
+}
+
+.hide{
+    display: none;
 }

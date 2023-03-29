@@ -19,6 +19,7 @@ class MilkManager {
             milkUsedNumber: this.rootElement.querySelector(".milk-used-number"),
             date: this.rootElement.querySelector(".current-date"),
             form: this.rootElement.querySelector("form"),
+            infoText: document.querySelector(".info-text"),
         };
         this.rootElement.querySelector(".dairy-text").value = this.dairyName + " (" + this.dairyCode + ")";
     }
@@ -33,10 +34,17 @@ class MilkManager {
                 date: this.elements.date.value
             }
             FetchUtil.postData("./php/insert-milk.php", milkData).then((response) => {
-                if(response.status == "error"){
+                if (response.status == "error") {
                     console.log(response.data);
-                }else {
-                    this.elements.form.reset();
+                } else {
+                    this.elements.infoText.classList.toggle("hide-info", false);
+                    this.elements.infoText.classList.toggle("show-info", true);
+                    setTimeout(() => {
+                        this.elements.infoText.classList.toggle("hide-info", true);
+                        this.elements.infoText.classList.toggle("show-info", false);
+                    }, 2500)
+                    this.elements.milkProducedNumber.value = "";
+                    this.elements.milkUsedNumber.value = "";
                 }
             });
         });

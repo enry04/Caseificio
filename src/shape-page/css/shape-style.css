@@ -1,0 +1,10 @@
+.quantity-number {
+    width: 150px;
+}
+
+.quantity-span {
+    transform: none !important;
+    clear: both;
+    bottom: calc(23% + 44px) !important;
+    font-size: 0.9em !important;
+}
