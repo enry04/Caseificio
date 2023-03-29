@@ -33,6 +33,7 @@ class ShapeManager {
             date: this.elements.date,
         }
         FetchUtil.postData("./php/read-last-sequential-code.php", sequentialNumData).then((response) => {
+            
         });
         //ciclare per quanittà e aggiungere forma
     }
