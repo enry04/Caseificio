@@ -35,6 +35,12 @@ class CodesManager {
     }
 
     initEventListeners() {
+        const btns = this.rootElement.querySelectorAll(".done-btn");
+        btns.forEach(btn => {
+            btn.addEventListener("click", (event) => {
+
+            });
+        });
     }
 
     getDoneBtn(rowIndex, id) {
