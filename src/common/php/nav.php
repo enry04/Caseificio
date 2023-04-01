@@ -10,7 +10,7 @@
             <a <?= ($page == "shape") ? $active : '' ?> href="../shape-page/shape.php">Registra forme</a>
         </h4>
         <h4 class="nav-text head-line">
-            <a <?= ($page == "") ? $active : '' ?> href="">Codici da stampare</a>
+            <a <?= ($page == "codes") ? $active : '' ?> href="../codes-page/codes.php">Codici da stampare</a>
         </h4>
         <h4 class="nav-text head-line">
             <a href="../common/php/logout.php">Logout</a>

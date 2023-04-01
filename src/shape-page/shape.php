@@ -42,8 +42,8 @@
                         </select>
                         <select class="typology-select" required>
                             <option value="" selected disabled hidden>-- Seleziona scelta --</option>
-                            <option value="1">Prima scelta</option>
-                            <option value="2">Seconda scelta</option>
+                            <option value="prima">Prima scelta</option>
+                            <option value="seconda">Seconda scelta</option>
                         </select>
                     </div>
                     <div class="input-container">
