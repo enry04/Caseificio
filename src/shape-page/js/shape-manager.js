@@ -29,6 +29,7 @@ class ShapeManager {
     initEventListeners() {
         //codice caseificio + mese e anno + numeroProgressivoMese (min 10cifre)
         this.elements.form.addEventListener("submit", async (event) => {
+            let isOk = false;
             event.preventDefault();
             const sequentialNumData = {
                 dairyId: this.dairyId,
@@ -37,7 +38,6 @@ class ShapeManager {
             let lastNum;
             await FetchUtil.postData("./php/read-last-sequential-code.php", sequentialNumData).then((response) => {
                 if (response.status == "success") {
-                    debugger
                     if (response.data['max'] == undefined || response.data['max'] == null) {
                         lastNum = 1;
                     } else {
@@ -47,7 +47,6 @@ class ShapeManager {
                     console.log(response.status);
                 }
             });
-            
             for (let i = 0; i < this.elements.quantityNumber.value; i++) {
                 let month;
                 if (new Date(this.elements.date.value).getMonth() + 1 < 10) {
@@ -63,15 +62,18 @@ class ShapeManager {
                     date: this.elements.date.value,
                     typology: this.elements.typologySelect.value,
                 }
-                console.log(cheeseData);
                 await FetchUtil.postData("./php/insert-shape.php", cheeseData).then((response) => {
-                    if(response.status == "success"){
-                        location.href = "../codes-page/codes.php";
-                    }else {
+                    if (response.status == "success") {
+                        isOk = true;
+                    } else {
+                        isOk = false;
                         console.log(response.data);
                     }
                 });
                 lastNum++
+            }
+            if (isOk) {
+                location.href = "../codes-page/codes.php";
             }
         })
         //ciclare per quanittà e aggiungere forma

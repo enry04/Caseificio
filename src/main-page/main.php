@@ -52,14 +52,14 @@
                             <div class="milk-logo-container"></div>
                             <h3>Il latte raccolto</h3>
                         </header>
-                        <h5>Nella giornata di oggi sono stati raccolti 213 litri di latte di ottima qualità in ogni caseificio. </h5>
+                        <h5>Nella giornata di oggi sono stati raccolti <span class="quantity-milk"></span> litri di latte di ottima qualità in ogni caseificio. </h5>
                     </div>
                     <div class="card">
                         <header class="card-header">
                             <div class="milk-logo-container"></div>
                             <h3>Il latte impiegato</h3>
                         </header>
-                        <h5>Nella giornata di oggi sono stati utilizzati 132 litri di latte di ottima qualità per produrre un formaggio unico in tutta Italia! </h5>
+                        <h5>Nella giornata di oggi sono stati utilizzati <span class="used-milk"></span> litri di latte di ottima qualità per produrre un formaggio unico in tutta Italia! </h5>
                     </div>
                 </div>
                 <div class="row">
@@ -68,19 +68,20 @@
                             <div class="cheese-logo-container"></div>
                             <h3>Il formaggio prodotto</h3>
                         </header>
-                        <h5>Nella giornata di oggi sono state prodotte 24 forme che sono destinate alla vendita. </h5>
+                        <h5>Nella giornata di oggi sono state prodotte <span class="producted-cheese"></span> forme che sono destinate alla vendita. </h5>
                     </div>
                     <div class="card">
                         <header class="card-header">
                             <div class="cheese-logo-container"></div>
                             <h3>Le forme vendute</h3>
                         </header>
-                        <h5>Nella giornata di oggi sono state vendute 43 forme. Cosa aspetti ad acquistarle anche tu? Non te ne pentirai! </h5>
+                        <h5>Nella giornata di oggi sono state vendute <span class="selled-cheese"></span> forme. Cosa aspetti ad acquistarle? Non te ne pentirai! </h5>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="./js/main-view.js" type="module"></script>
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+import FetchUtil from "../../common/js/fetch-util.js";
+
 class CodesManager {
     constructor(tableElement) {
         this.rootElement = tableElement;
@@ -38,9 +40,27 @@ class CodesManager {
         const btns = this.rootElement.querySelectorAll(".done-btn");
         btns.forEach(btn => {
             btn.addEventListener("click", (event) => {
-
+                const data = {
+                    shapeId: event.target.id,
+                }
+                FetchUtil.postData("./php/update-shape.php", data).then((response) => {
+                    if (response.status == "success") {
+                        let row = this.tBody.querySelector(`[id="${event.target.attributes.getNamedItem('rowIndex').value}"]`);
+                        row.remove();
+                        this.checkTbody();
+                    } else {
+                        console.log(response.data);
+                    }
+                });
             });
         });
+    }
+
+    checkTbody() {
+        if (!this.tBody.hasChildNodes()) {
+            this.rootElement.classList.toggle("hide", true);
+            document.querySelector(".no-data-text").classList.toggle("hide", false);
+        }
     }
 
     getDoneBtn(rowIndex, id) {
