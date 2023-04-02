@@ -35,7 +35,10 @@
             } else {
             ?>
                 <h1 class="title-text">I migliori caseifici di <br> tutta Italia</h1>
-                <input type="button" class="main-btn explore-btn" value="Esplora">
+                <a href="../dairies-page/dairies.php">
+                    <input type="button" class="main-btn explore-btn" value="Esplora">
+                </a>
+
             <?php
             }
             ?>
