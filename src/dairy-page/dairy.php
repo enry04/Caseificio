@@ -49,11 +49,11 @@
                 <div class="cards-container">
                     <div class="card-container produced-milk-card">
                         <h3>Il latte raccolto</h3>
-                        <h4>Sono stati raccolti <span class="produced-milk-span"></span>litri di latte di ottima qualità nella giornata di oggi!</h4>
+                        <h4>Sono stati raccolti <span class="produced-milk-span"></span> litri di latte di ottima qualità nella giornata di oggi!</h4>
                     </div>
                     <div class="card-container used-milk-card">
                         <h3>Il latte impiegato</h3>
-                        <h4>Sono stati usati <span class="used-milk-span"></span>litri di latte per la produzione di forme di formaggio nella giornata di oggi!</h4>
+                        <h4>Sono stati usati <span class="used-milk-span"></span> litri di latte per la produzione di forme di formaggio nella giornata di oggi!</h4>
                     </div>
                     <div class="card-container produced-cheese-card">
                         <h3>Le forme prodotte</h3>
@@ -72,11 +72,11 @@
                         <h4 class="date-text">Inserisci due date per visualizzare le forme prodotte in quell'arco di tempo!</h4>
                         <form method="post">
                             <div class="row">
-                                <input type="date" class="first-date small-date" max="<?= date("Y-m-d"); ?>">
-                                <input type="date" class="second-date small-date" min="<?= date(" Y-m-d"); ?>">
+                                <input type="date" class="first-date small-date" max="<?= date("Y-m-d"); ?>" required value="<?= date("Y-m-d"); ?>">
+                                <input type="date" class="second-date small-date" min="<?= date(" Y-m-d"); ?>" required value="<?= date("Y-m-d"); ?>">
                             </div>
                             <input type="submit" value="Visualizza" class="small-submit">
-                            <h5 class="result-text">Tra il <span class="first-date-span"></span> e il <span class="second-date-span"></span> sono state prodotte <span class="cheese-producted-between-dates-span"></span> forme di formaggio!</h5>
+                            <h5 class="result-text hide">Tra il <span class="first-date-span"></span> e il <span class="second-date-span"></span> sono state prodotte <span class="cheese-producted-between-dates-span"></span> forme di formaggio!</h5>
                         </form>
                     </div>
                 </div>
