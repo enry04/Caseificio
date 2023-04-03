@@ -21,7 +21,7 @@
     require_once('../common/php/header.php');
     ?>
     <main>
-        <section>
+        <section class="form-section">
             <h3>
                 Login
             </h3>

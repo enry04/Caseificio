@@ -22,7 +22,7 @@
     require_once('../common/php/header.php');
     ?>
     <main>
-        <section>
+        <section class="form-section">
             <h3>Inserisci le forme prodotte</h3>
             <div class="form-container">
                 <form method="post">

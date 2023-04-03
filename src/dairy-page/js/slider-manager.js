@@ -73,7 +73,6 @@ class SliderManager {
         for (let i = 0; i < this.nImages; i++) {
             let div = document.createElement("div");
             div.classList.toggle("slide-image-container", true);
-            div.classList.toggle("fade", true);
             div.classList.toggle("hide", true);
             div.id = i + 1;
             div.style.backgroundImage = `url(${this.images[i]})`;
