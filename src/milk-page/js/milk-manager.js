@@ -37,6 +37,7 @@ class MilkManager {
                 if (response.status == "error") {
                     console.log(response.data);
                 } else {
+                    this.elements.infoText.textContent = 'Latte aggiunto con successo!';
                     this.elements.infoText.classList.toggle("hide-info", false);
                     this.elements.infoText.classList.toggle("show-info", true);
                     setTimeout(() => {

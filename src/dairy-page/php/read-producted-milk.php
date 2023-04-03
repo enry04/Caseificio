@@ -11,7 +11,7 @@ $dairyId = $data->dairyId;
 
 $query = $pdo->prepare('SELECT SUM(litriRaccolti) AS totale FROM tLatte WHERE idCaseificio = :dairyId AND DAY(data) = DAY(NOW())');
 $query->execute(['dairyId' => $dairyId]);
-$dairyData = $query->fetchAll();
+$dairyData = $query->fetch();
 $result = null;
 
 if ($dairyData != null) {

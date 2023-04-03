@@ -138,7 +138,8 @@ select {
 
 .info-text {
   color: #8aa972;
-  transition: all 1s;
+  text-align: center;
+  transition: all 1.5s;
 }
 
 .hide-info {

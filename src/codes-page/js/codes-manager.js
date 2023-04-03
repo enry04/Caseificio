@@ -46,8 +46,8 @@ class CodesManager {
                 FetchUtil.postData("./php/update-shape.php", data).then((response) => {
                     if (response.status == "success") {
                         let row = this.tBody.querySelector(`[id="${event.target.attributes.getNamedItem('rowIndex').value}"]`);
-                        row.remove();
-                        this.checkTbody();
+                        let td = row.querySelector(":nth-child(5)");
+                        td.innerHTML = "Codice stampato"
                     } else {
                         console.log(response.data);
                     }

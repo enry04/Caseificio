@@ -9,9 +9,11 @@ $json = file_get_contents('php://input');
 $data = json_decode($json);
 
 $dairyId = $data->dairyId;
+$firstDate = $data->firstDate;
+$secondDate = $data->secondDate;
 
-$query = $pdo->prepare("SELECT COUNT(*) AS totale FROM tForma WHERE DAY(dataProduzione) = DAY(NOW()) AND idCaseificio = :dairyId AND stato = 'V'");
-$query->execute(['dairyId' => $dairyId]);
+$query = $pdo->prepare("SELECT COUNT(*) AS totale FROM tForma WHERE idCaseificio = :dairyId AND dataProduzione BETWEEN :firstDate AND :secondDate");
+$query->execute(['dairyId' => $dairyId, 'firstDate' => $firstDate, 'secondDate' => $secondDate]);
 $data = $query->fetch();
 $result = null;
 

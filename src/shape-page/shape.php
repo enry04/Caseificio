@@ -53,7 +53,7 @@
                     <input type="submit" class="submit-btn" value="Conferma">
                 </form>
             </div>
-            <h5 class="info-text hide-info">Forme aggiunte con successo!</h5>
+            <h5 class="info-text hide-info"></h5>
         </section>
     </main>
     <script src="./js/shape-view.js" type="module"></script>

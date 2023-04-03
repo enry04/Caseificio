@@ -73,7 +73,17 @@ class ShapeManager {
                 lastNum++
             }
             if (isOk) {
-                location.href = "../codes-page/codes.php";
+                this.elements.infoText.innerHTML = 'Forme aggiunte con successo! <br> I codici da stampare si trovano nella pagina "Codici da stampare"';
+                this.elements.infoText.classList.toggle("hide-info", false);
+                this.elements.infoText.classList.toggle("show-info", true);
+                setTimeout(() => {
+                    this.elements.infoText.classList.toggle("hide-info", true);
+                    this.elements.infoText.classList.toggle("show-info", false);
+                }, 2500)
+                this.elements.seasoningSelect.value = "";
+                this.elements.typologySelect.value = "";
+                this.elements.quantityNumber.value = 1;
+                // location.href = "../codes-page/codes.php";
             }
         })
         //ciclare per quanittà e aggiungere forma

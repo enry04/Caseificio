@@ -57,7 +57,7 @@
                     </div>
                     <div class="card-container produced-cheese-card">
                         <h3>Le forme prodotte</h3>
-                        <h4>Sono state prodotte <span class="quantity-cheese-span"> forme di formaggio destinate alla vendita!</span></h4>
+                        <h4>Sono state prodotte <span class="quantity-cheese-span"></span> forme di formaggio destinate alla vendita!</h4>
                     </div>
                     <div class="card-container selled-cheese-card">
                         <h3>Le forme vendute</h3>
@@ -65,15 +65,15 @@
                     </div>
                     <div class="card-container milk-produced-average-card">
                         <h3>La media del latte prodotto quest' anno nella provincia di <span class="card-province"></span></h3>
-                        <h4>Quest' anno c'è una media di <span class="milk-average-span"></span> ltri di latte prodotti a <span class="card-province-span"></span>!</h4>
+                        <h4>Quest' anno c'è una media di <span class="milk-average-span"></span> ltri di latte prodotti al giorno nei caseifici a <span class="card-province-span"></span>!</h4>
                     </div>
                     <div class="card-container producted-cheese-between-dates-card">
                         <h3>Le forme prodotte tra due date</h3>
                         <h4 class="date-text">Inserisci due date per visualizzare le forme prodotte in quell'arco di tempo!</h4>
                         <form method="post">
                             <div class="row">
-                                <input type="date" class="first-date small-date" max="<?= date("Y-m-d"); ?>" required value="<?= date("Y-m-d"); ?>">
-                                <input type="date" class="second-date small-date" min="<?= date(" Y-m-d"); ?>" required value="<?= date("Y-m-d"); ?>">
+                                <input type="date" class="first-date small-date" max="<?= date("Y-m-d", strtotime('yesterday')); ?>" required value="<?= date("Y-m-d", strtotime('yesterday')); ?>">
+                                <input type="date" class="second-date small-date" max="<?= date("Y-m-d"); ?>" required value="<?= date("Y-m-d"); ?>">
                             </div>
                             <input type="submit" value="Visualizza" class="small-submit">
                             <h5 class="result-text hide">Tra il <span class="first-date-span"></span> e il <span class="second-date-span"></span> sono state prodotte <span class="cheese-producted-between-dates-span"></span> forme di formaggio!</h5>

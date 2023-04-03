@@ -50,7 +50,6 @@
                 </form>
             </div>
             <h5 class="info-text hide-info">
-                Latte aggiunto con successo!
             </h5>
         </section>
     </main>
