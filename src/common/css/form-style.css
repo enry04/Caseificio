@@ -1,4 +1,5 @@
-main > .form-section {
+main > .form-section,
+main > .table-section {
   display: flex;
   flex-direction: column;
   align-items: center;

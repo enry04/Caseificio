@@ -27,6 +27,9 @@ await FetchUtil.postData("./php/read-dairy.php", dairyData).then((response) => {
         dairyManager.setDescription(response.data[0]['descrizione']);
         dairyManager.setPlace("Situato in " + response.data[0]['via'] + ' ' + response.data[0]['numeroCivico'] + ' (Cap ' + response.data[0]['cap'] + ')');
         dairyManager.setCoordinates("Latitudine: " + response.data[0]['latitudine'] + '  Longitudine: ' + response.data[0]['longitudine']);
+        dairyManager.setCardTitle(response.data[0]['nome']);
+        dairyManager.setProvince(response.data[0]['provincia']);
+        dairyManager.setCardProvince(response.data[0]['provincia'])
     } else {
         console.log(response.status);
     }

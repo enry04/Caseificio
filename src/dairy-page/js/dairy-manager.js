@@ -15,6 +15,9 @@ class DairyManager {
             description: this.rootElement.querySelector(".description-text"),
             place: this.rootElement.querySelector(".place-text"),
             coordinates: this.rootElement.querySelector(".coordinates-text"),
+            cardsTitle: this.rootElement.querySelector(".card-title"),
+            province: this.rootElement.querySelector(".province-text"),
+            cardProvince: this.rootElement.querySelector(".card-province")
         };
     }
 
@@ -36,6 +39,18 @@ class DairyManager {
 
     setCoordinates(coordinates){
         this.elements.coordinates.textContent = coordinates;
+    }
+
+    setCardTitle(title){
+        this.elements.cardsTitle.textContent = title;
+    }
+
+    setProvince(province){
+        this.elements.province.textContent = province;
+    }
+
+    setCardProvince(province){
+        this.elements.cardProvince.textContent = province;
     }
 
 }
