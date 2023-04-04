@@ -29,6 +29,11 @@
                     <h1 class="title-text">Benvenuto nell' area riservata <br> del caseificio!</h1>
                     <input type="button" class="main-btn operations-btn" value="Operazioni">
                 <?php
+                } else if ($_COOKIE['user_type'] == 'consorzio') {
+                ?>
+                    <h1 class="title-text">Benvenuto nell' area riservata <br> del consorzio!</h1>
+                    <input type="button" class="main-btn operations-btn" value="Operazioni">
+                <?php
                 }
                 ?>
             <?php
@@ -38,7 +43,6 @@
                 <a href="../dairies-page/dairies.php">
                     <input type="button" class="main-btn explore-btn" value="Esplora">
                 </a>
-
             <?php
             }
             ?>

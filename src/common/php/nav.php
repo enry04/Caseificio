@@ -22,7 +22,7 @@
             <a href="">Gestione acquirenti</a>
         </h4>
         <h4 class="nav-text head-line">
-            <a href="">Registra vendita</a>
+            <a href="../sell-page/choose-form.php">Registra vendita</a>
         </h4>
         <h4 class="nav-text head-line">
             <a href="../common/php/logout.php">Logout</a>
