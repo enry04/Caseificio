@@ -15,6 +15,9 @@ class CardsManager {
 
     initElements() {
         this.elements = {
+            cardsTitle: this.rootElement.querySelector(".card-title"),
+            titleProvince: this.rootElement.querySelector(".province-text"),
+            cardProvince: this.rootElement.querySelector(".card-province"),
             producedMilk: this.rootElement.querySelector(".produced-milk-span"),
             usedMilk: this.rootElement.querySelector(".used-milk-span"),
             productedCheese: this.rootElement.querySelector(".quantity-cheese-span"),
@@ -59,6 +62,18 @@ class CardsManager {
                 }
             });
         });
+    }
+
+    setCardTitle(title) {
+        this.elements.cardsTitle.textContent = title;
+    }
+
+    setTitleProvince(province) {
+        this.elements.titleProvince.textContent = province;
+    }
+
+    setCardProvince(province) {
+        this.elements.cardProvince.textContent = province;
     }
 
     setProvince(province) {

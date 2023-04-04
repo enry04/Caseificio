@@ -10,7 +10,7 @@ const sliderElement = document.querySelector(".slide-container");
 const parentElement = document.querySelector("main");
 const dairyManager = new DairyManager(parentElement);
 dairyManager.init();
-const cardsParent = document.querySelector(".cards-container");
+const cardsParent = document.querySelector(".cards-section");
 const cardsManager = new CardsManager(cardsParent, dairyId);
 cardsManager.init();
 let dairyData = {
@@ -31,9 +31,9 @@ await FetchUtil.postData("./php/read-dairy.php", dairyData).then((response) => {
         dairyManager.setDescription(response.data[0]['descrizione']);
         dairyManager.setPlace("Situato in " + response.data[0]['via'] + ' ' + response.data[0]['numeroCivico'] + ' (Cap ' + response.data[0]['cap'] + ')');
         dairyManager.setCoordinates("Latitudine: " + response.data[0]['latitudine'] + '  Longitudine: ' + response.data[0]['longitudine']);
-        dairyManager.setCardTitle(response.data[0]['nome']);
-        dairyManager.setProvince(province);
-        dairyManager.setCardProvince(province);
+        cardsManager.setCardTitle(response.data[0]['nome']);
+        cardsManager.setTitleProvince(province)
+        cardsManager.setCardProvince(province);
         cardsManager.setProvince(province);
     } else {
         console.log(response.status);

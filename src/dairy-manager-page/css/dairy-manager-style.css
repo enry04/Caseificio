@@ -1,0 +1,14 @@
+.title{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.dairy-title {
+    text-align: center;
+    margin-top: 0;
+}
+
+.dairy-info-container {
+    gap: 30px;
+}
+  

@@ -19,7 +19,7 @@
     } else if ($_COOKIE['user_type'] == 'consorzio') {
     ?>
         <h4 class="nav-text head-line">
-            <a href="">Gestione acquirenti</a>
+            <a href="../add-acquirenti/add-acquirenti.php">Gestione acquirenti</a>
         </h4>
         <h4 class="nav-text head-line">
             <a href="../sell-page/choose-form.php">Registra vendita</a>

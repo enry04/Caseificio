@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../common/css/form-style.css">
     <link rel="stylesheet" href="../common/css/slider-style.css">
     <link rel="stylesheet" href="../common/css/dairy-style.css">
+    <link rel="stylesheet" href="./css/dairy-manager-style.css">
     <link rel="icon" href="../common/imgs/logo.png">
 </head>
 
@@ -24,23 +25,38 @@
     ?>
     <main>
         <section>
-            <h2 class="dairy-title"></h2>
+            <h2 class="title">Modifica i dati del caseificio</h2>
             <div class="dairy-container">
                 <div class="slide-container">
                     <a class="prev">&#10094;</a>
                     <a class="next">&#10095;</a>
                 </div>
                 <div class="dairy-info-container">
-                    <h3 class="holder-text"></h3>
-                    <h4 class="description-text"></h4>
+                    <form method="post">
+                        <div class="row">
+                            <div class="input-container">
+                                <span>Nome caseificio</span>
+                                <input type="text" class="dairy-title" required>
+                            </div>
+                            <div class="input-container">
+                                <span>Titolare</span>
+                                <input type="text" class="holder-text" required>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <span>Descrizione</span>
+                            <textarea cols="30" rows="10" class="description-text" required></textarea>
+                        </div>
+                        <input type="submit" value="Conferma modifica">
+                    </form>
                     <h5 class="place-text"></h5>
                     <h5 class="coordinates-text"></h5>
                 </div>
             </div>
         </section>
-        <?php
-        require_once("../common/php/cards-section.php")
-        ?>
+        <!-- <?php
+                require_once("../common/php/cards-section.php")
+                ?> -->
     </main>
     <script src="./js/dairy-view.js" type="module"></script>
 </body>

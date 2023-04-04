@@ -1,3 +1,4 @@
+import CookieManager from "../../common/js/cookie-manager.js";
 class DairiesManager {
     constructor(parentElement) {
         this.rootElement = parentElement;
@@ -23,13 +24,22 @@ class DairiesManager {
             detailsBtn: this.template.querySelector(".details-btn"),
         };
         this.rootElement.appendChild(this.template);
+        if (CookieManager.getCookie("user_type") == "consorzio") {
+            this.elements.detailsBtn.value = "Modifica dati";
+        } else {
+            this.elements.detailsBtn.value = "Dettagli";
+        }
     }
 
     initEventListeners() {
         this.elements.detailsBtn.addEventListener("click", () => {
             let valueToSend = new URLSearchParams();
             valueToSend.append("dairyId", this.currentId);
-            location.href = "../dairy-page/dairy.php?" + valueToSend.toString();
+            if (CookieManager.getCookie("user_type") == "consorzio") {
+                location.href = "../dairy-manager-page/dairy-manager.php?" + valueToSend.toString();
+            } else {
+                location.href = "../dairy-page/dairy.php?" + valueToSend.toString();
+            }
         });
     }
 

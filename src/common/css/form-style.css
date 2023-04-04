@@ -1,5 +1,5 @@
-main > .form-section,
-main > .table-section {
+main>.form-section,
+main>.table-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +15,7 @@ form {
   align-items: center;
 }
 
-.form-container > :first-child {
+.form-container> :first-child {
   margin-top: 50px;
 }
 
@@ -43,9 +43,12 @@ form {
   transition: 0.5s;
 }
 
-input:valid ~ span,
-input:focus ~ span,
-input:disabled ~ span {
+input:valid~span,
+input:focus~span,
+input:disabled~span,
+textarea:valid~span,
+textarea:focus~span,
+textarea:disabled~span {
   color: #272343;
   transform: translateY(-44px);
   font-size: 0.9em;

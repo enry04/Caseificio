@@ -1,7 +1,7 @@
 <?php
 
 require("../common/php/connection.php");
-require_once("../database.php");
+require_once("../common/php/database.php");
 
 
 
@@ -56,8 +56,9 @@ require_once("../database.php");
     }
     ?>
 
+    <br>
     <main>
-        <section>
+        <section class="form-section">
             <h3>Inserisci vendita formaggio</h3>
             <div class="form-container">
                 <form method="post" action="updatedb.php">
@@ -141,6 +142,11 @@ require_once("../database.php");
                             tipologiaAcquirenteInput.value = tipologia;
                         });
                     </script>
+
+
+
+
+
                     <script>
                         var acquirenteSelect = document.getElementById("acquirente-select");
                         var partitaIvaInput = document.getElementById("partita-iva-input");
