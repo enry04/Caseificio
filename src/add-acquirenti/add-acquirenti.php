@@ -14,18 +14,11 @@ require_once("../common/php/database.php");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../common/css/page-style.css">
-    <link rel="stylesheet" href="../common/css/header-style.css">
-    <link rel="stylesheet" href="../common/css/nav-style.css">
-    <!-- <link rel="stylesheet" href="./css/milk-style.css">  -->
-    <link rel="icon" href="../common/imgs/logo.png">
-
+    <title>Caseificio</title>
     <link rel="stylesheet" href="../common/css/page-style.css">
     <link rel="stylesheet" href="../common/css/header-style.css">
     <link rel="stylesheet" href="../common/css/nav-style.css">
     <link rel="stylesheet" href="../common/css/form-style.css">
-    <!-- <link rel="stylesheet" href="./css/milk-style.css"> -->
     <link rel="icon" href="../common/imgs/logo.png">
 </head>
 
@@ -39,7 +32,7 @@ require_once("../common/php/database.php");
 
     <main>
         <section class="form-section">
-            <h3>Aggiungi Nuovo Acquirente</h3>
+            <h3>Aggiungi un nuovo acquirente</h3>
             <div class="form-container">
                 <form method="post" action="updateDB.php">
                     <div class="row">
@@ -55,7 +48,7 @@ require_once("../common/php/database.php");
                     <div class="row">
                         <div class="input-container">
                             <select name="tipologia" id="acquirente-select" class="milk-produced-number" required>
-                                <option value="" disabled selected>Seleziona Tipologia</option>
+                                <option value="" disabled selected hidden>-- Seleziona Tipologia --</option>
                                 <?php
                                 $sql = "SELECT * From tTipologiaAcquirente";
 

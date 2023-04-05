@@ -78,6 +78,7 @@ await FetchUtil.postData("./php/read-producted-cheese.php", dairyData).then((res
 
 await FetchUtil.postData("./php/read-selled-cheese.php", dairyData).then((response) => {
     if (response.status == "success") {
+        console.log(response.data);
         if (response.data['totale'] == null) {
             cardsManager.setSelledCheese(0);
         } else {

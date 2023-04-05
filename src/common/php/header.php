@@ -9,7 +9,7 @@
                     <a <?= ($page == "main") ? $active : '' ?> class="header-option" href="../main-page/main.php"> Home </a>
                 </h3>
                 <h3 class="head-line">
-                    <a <?= ($page == "contacts") ? $active : '' ?> class="header-option" href="../contacts-page/contacts.php">Contattaci</a>
+                    <a <?= ($page == "contacts") ? $active : '' ?> class="header-option" href="../contact-page/contact.php">Contattaci</a>
                 </h3>
                 <h3 class="head-line">
                     <a <?= ($page == "dairies") ? $active : '' ?> class="header-option" href="../dairies-page/dairies.php">Dettagli caseifici </a>
@@ -23,7 +23,7 @@
         <a <?= ($page == "main") ? $active : '' ?> class="header-option" href="../main-page/main.php"> Home </a>
     </h3>
     <h3 class="head-line">
-        <a <?= ($page == "contacts") ? $active : '' ?> class="header-option" href="../contacts-page/contacts.php">Contattaci </a>
+        <a <?= ($page == "contacts") ? $active : '' ?> class="header-option" href="../contact-page/contact.php">Contattaci </a>
     </h3>
     <h3 class="head-line">
         <a <?= ($page == "dairies") ? $active : '' ?> class="header-option" href="../dairies-page/dairies.php">Gestione caseifici </a>
@@ -39,7 +39,7 @@
     <a <?= ($page == "main") ? $active : '' ?> class="header-option" href="../main-page/main.php"> Home </a>
 </h3>
 <h3 class="head-line">
-    <a <?= ($page == "contacts") ? $active : '' ?> class="header-option" href="../contacts-page/contacts.php"> Contattaci </a>
+    <a <?= ($page == "contacts") ? $active : '' ?> class="header-option" href="../contact-page/contact.php"> Contattaci </a>
 </h3>
 <h3 class="head-line">
     <a <?= ($page == "dairies") ? $active : '' ?> class="header-option" href="../dairies-page/dairies.php"> I nostri caseifici </a>

@@ -18,7 +18,6 @@ require_once("../common/php/database.php");
     <link rel="stylesheet" href="../common/css/page-style.css">
     <link rel="stylesheet" href="../common/css/header-style.css">
     <link rel="stylesheet" href="../common/css/nav-style.css">
-    <!-- <link rel="stylesheet" href="./css/milk-style.css"> -->
     <link rel="icon" href="../common/imgs/logo.png">
     <link rel="stylesheet" href="./css/choose-form-style.css">
 </head>
@@ -32,10 +31,10 @@ require_once("../common/php/database.php");
     ?>
 
 
-    <div style="display: flex; justify-content: center; align-items: center;">
+    <div style="display: flex; justify-content: center; align-items: center; margin-top:50px">
         <form action="choose-form.php" method="POST">
-            <label for="search">Cerca forma:</label>
-            <input type="text" id="search" name="search">
+            <label for="search">Inserisci codice forma:</label>
+            <input type="text" id="search" name="search" required>
             <input type="submit" value="Cerca">
         </form>
     </div>
@@ -45,7 +44,7 @@ require_once("../common/php/database.php");
             <table>
                 <tr>
                     <td style="background-color: gray;">Codice Forma</td>
-                    <td style="background-color: lightgray;"></td>
+                    <td style="background-color: gray;">Seleziona per la vendita</td>
                 </tr>
 
                 <?php
@@ -78,7 +77,7 @@ require_once("../common/php/database.php");
                     while ($row = $result->fetch_assoc()) {
                         echo "<tr>
                     <td>" . $row['codice'] . "</td>
-                    <td><input type=\"radio\" name=\"opzione\" value=\"" . $row['id'] . "\"></td>
+                    <td><input type=\"radio\" required name=\"opzione\" value=\"" . $row['id'] . "\"></td>
                 </tr>";
                     }
                 } else {

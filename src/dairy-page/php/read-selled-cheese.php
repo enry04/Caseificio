@@ -10,7 +10,7 @@ $data = json_decode($json);
 
 $dairyId = $data->dairyId;
 
-$query = $pdo->prepare("SELECT COUNT(*) AS totale FROM tForma WHERE DAY(dataProduzione) = DAY(NOW()) AND idCaseificio = :dairyId AND stato = 'V'");
+$query = $pdo->prepare("SELECT COUNT(*) AS totale FROM tForma INNER JOIN tVendita ON tVendita.idForma = tForma.id WHERE DAY(dataVendita) = DAY(NOW()) AND idCaseificio = :dairyId AND stato = 'N'");
 $query->execute(['dairyId' => $dairyId]);
 $data = $query->fetch();
 $result = null;
