@@ -1,14 +1,35 @@
-.title{
+.title {
     text-align: center;
     margin-top: 50px;
 }
 
 .dairy-title {
-    text-align: center;
+    text-align: start;
     margin-top: 0;
+    width: 220px;
+}
+
+.holder-text {
+    width: 220px;
+}
+
+textarea {
+    min-width: 400px;
+    min-height: 150px;
+    width: 400px;
+    height: 150px;
+    max-width: 400px;
+    max-height: 150px;
+}
+
+textarea:valid~span,
+textarea:focus~span,
+textarea:disabled~span {
+    color: #272343;
+    transform: translateY(-128px);
+    font-size: 0.9em;
 }
 
 .dairy-info-container {
     gap: 30px;
 }
-  

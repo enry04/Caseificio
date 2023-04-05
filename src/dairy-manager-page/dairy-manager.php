@@ -35,17 +35,17 @@
                     <form method="post">
                         <div class="row">
                             <div class="input-container">
-                                <span>Nome caseificio</span>
                                 <input type="text" class="dairy-title" required>
+                                <span>Nome caseificio</span>
                             </div>
                             <div class="input-container">
-                                <span>Titolare</span>
                                 <input type="text" class="holder-text" required>
+                                <span>Titolare</span>
                             </div>
                         </div>
                         <div class="input-container">
-                            <span>Descrizione</span>
                             <textarea cols="30" rows="10" class="description-text" required></textarea>
+                            <span>Descrizione</span>
                         </div>
                         <input type="submit" value="Conferma modifica">
                     </form>
@@ -54,9 +54,6 @@
                 </div>
             </div>
         </section>
-        <!-- <?php
-                require_once("../common/php/cards-section.php")
-                ?> -->
     </main>
     <script src="./js/dairy-view.js" type="module"></script>
 </body>

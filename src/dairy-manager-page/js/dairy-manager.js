@@ -6,6 +6,7 @@ class DairyManager {
 
     init() {
         this.initElements();
+        this.initEventlisteners();
     }
 
     initElements() {
@@ -15,6 +16,12 @@ class DairyManager {
             description: this.rootElement.querySelector(".description-text"),
             form: this.rootElement.querySelector("form"),
         };
+    }
+
+    initEventlisteners() {
+        this.elements.form.addEventListener("submit", (event) => {
+            event.preventDefault();
+        });
     }
 
     setTitle(title) {
