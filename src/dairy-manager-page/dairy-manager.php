@@ -53,6 +53,7 @@
                     <h5 class="coordinates-text"></h5>
                 </div>
             </div>
+            <h4 class="info-text hide-text"></h4>
         </section>
     </main>
     <script src="./js/dairy-view.js" type="module"></script>

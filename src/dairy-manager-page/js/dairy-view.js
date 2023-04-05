@@ -9,12 +9,11 @@ let dairyId = dataToReceive.get("dairyId");
 
 const sliderElement = document.querySelector(".slide-container");
 const parentElement = document.querySelector("main");
-const dairyManager = new DairyManager(parentElement);
+const dairyManager = new DairyManager(parentElement, dairyId);
 dairyManager.init();
 let dairyData = {
     dairyId: dairyId,
 }
-let province;
 await FetchUtil.postData("../dairy-page/php/read-dairy.php", dairyData).then((response) => {
     if (response.status == "success") {
         const sliderManager = new SliderManager(sliderElement);

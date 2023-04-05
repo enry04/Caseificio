@@ -85,7 +85,6 @@
                         <h5>Nella giornata di oggi sono state vendute <span class="selled-cheese"></span> forme. Cosa aspetti ad acquistarle? Non te ne pentirai! </h5>
                     </div>
                 </div>
-            </div>
         </section>
     </main>
     <script src="./js/main-view.js" type="module"></script>
