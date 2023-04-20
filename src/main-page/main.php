@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../common/css/nav-style.css">
     <link rel="stylesheet" href="./css/main-style.css">
     <link rel="icon" href="../common/imgs/logo.png">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0RLgPIM87iDhK6rJww_Wb6VuIMXnjS_U"></script>
 </head>
 
 <body>
@@ -85,6 +86,12 @@
                         <h5>Nella giornata di oggi sono state vendute <span class="selled-cheese"></span> forme. Cosa aspetti ad acquistarle? Non te ne pentirai! </h5>
                     </div>
                 </div>
+        </section>
+        <section class="map-section">
+            <div class="title-container">
+                <h2>La posizione dei nostri caseifici</h2>
+            </div>
+            <div class="map-container"></div>
         </section>
     </main>
     <script src="./js/main-view.js" type="module"></script>

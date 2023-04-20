@@ -114,3 +114,17 @@
     padding: 20px;
     margin-top: 150px;
 }
+
+.map-section {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.map-container {
+    height: 600px;
+    width: 80%;
+}
