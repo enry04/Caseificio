@@ -1,0 +1,158 @@
+main>.form-section,
+main>.table-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 125px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container> :first-child {
+  margin-top: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+.input-container {
+  position: relative;
+  transition: 0.5s;
+}
+
+.input-container span {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #272343;
+  position: absolute;
+  left: 6px;
+  bottom: 23%;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input:valid~span,
+input:focus~span,
+input:disabled~span,
+textarea:valid~span,
+textarea:focus~span,
+textarea:disabled~span {
+  color: #272343;
+  transform: translateY(-44px);
+  font-size: 0.9em;
+}
+
+input,
+textarea {
+  background: #f3d2c1;
+  width: 350px;
+  height: 45px;
+  border-radius: 10px;
+  padding: 0px 10px 0px 10px;
+  outline: 0;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #272343;
+}
+
+textarea {
+  padding: 10px 10px 0 10px;
+  font-size: 1.5em;
+}
+
+input[type="submit"],
+input[type="button"] {
+  background-color: #f582ae;
+  color: #272343;
+  cursor: pointer;
+}
+
+input[type="date"],
+input[type="time"] {
+  color: transparent;
+  text-align: center;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+input[type="date"]:focus,
+input[type="date"]:valid,
+input[type="date"]:disabled,
+input[type="time"]:focus,
+input[type="time"]:valid {
+  color: #272343;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-outer-spin-button,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+input:hover,
+input:not(input[type="submit"]):focus,
+input:not(input[type="submit"]):valid,
+input:not(input[type="submit"]):disabled,
+select:hover,
+select:focus,
+select:valid,
+textarea:hover,
+textarea:focus,
+textarea:valid {
+  box-shadow: 0 5px 15px -10px rgba(31, 18, 53, 0.6);
+}
+
+input:not(.quantity-number)::-webkit-outer-spin-button,
+input:not(.quantity-number)::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+select {
+  width: 350px;
+  color: #272343;
+  height: 45px;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0 10px 0 10px;
+  background-color: #f3d2c1;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: 0;
+}
+
+.error-info {
+  color: red;
+}
+
+.info-text {
+  color: #8aa972;
+  text-align: center;
+  transition: all 1.5s;
+}
+
+.hide-info {
+  opacity: 0;
+}
+
+.show-info {
+  opacity: 1;
+}
+
+.hide {
+  display: none;
+}

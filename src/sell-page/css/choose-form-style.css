@@ -1,0 +1,88 @@
+/* Seleziona il contenitore genitore */
+div {
+  display: flex;
+  /* Crea una griglia flessibile */
+  justify-content: center;
+  /* Centra orizzontalmente il contenuto del div */
+  align-items: center;
+  /* Centra verticalmente il contenuto del div */
+}
+
+input[type="text"] {
+  background: #f3d2c1;
+  width: 350px;
+  height: 45px;
+  border-radius: 10px;
+  padding: 0px 10px 0px 10px;
+  outline: 0;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #272343;
+}
+
+input:not(input[type="submit"]):focus,
+input:not(input[type="submit"]):valid {
+  box-shadow: 0 5px 15px -10px rgba(31, 18, 53, 0.6);
+}
+
+/* Seleziona la tabella */
+table {
+  width: 400px;
+  /* Imposta la larghezza della tabella */
+  border-collapse: collapse;
+  /* Unisce i bordi delle celle */
+  margin: 20px;
+  /* Aggiunge un margine intorno alla tabella */
+}
+
+/* Seleziona tutte le celle della tabella */
+td {
+  padding: 10px;
+  /* Aggiunge il padding alle celle */
+  border: 1px solid black;
+  /* Aggiunge un bordo alle celle */
+  text-align: center;
+  /* Centra il testo all'interno delle celle */
+}
+
+/* Seleziona le celle della prima riga */
+tr:first-child td {
+  background-color: gray;
+  /* Imposta il colore di sfondo della prima riga */
+  color: white;
+  /* Imposta il colore del testo della prima riga */
+  font-weight: bold;
+  /* Imposta il testo in grassetto nella prima riga */
+}
+
+/* Seleziona le celle delle opzioni */
+tr:not(:first-child) td:first-child {
+  font-weight: bold;
+  /* Imposta il testo in grassetto nelle opzioni */
+}
+
+/* Seleziona il pulsante di invio */
+input[type="submit"] {
+  margin: 20px;
+  /* Aggiunge un margine intorno al pulsante di invio */
+  padding: 10px;
+  /* Aggiunge il padding al pulsante di invio */
+  background-color: #f582ae;
+  /* Imposta il colore di sfondo del pulsante di invio */
+  color: #272343;
+  /* Imposta il colore del testo del pulsante di invio */
+  border: none;
+  /* Rimuove il bordo dal pulsante di invio */
+  border-radius: 5px;
+  /* Aggiunge un bordo arrotondato al pulsante di invio */
+  font-size: 16px;
+  /* Imposta la dimensione del testo del pulsante di invio */
+  cursor: pointer;
+  /* Imposta il cursore del mouse sul pulsante di invio */
+}
+
+/* Aggiunge uno stile al pulsante di invio al passaggio del mouse */
+input[type="submit"]:hover {
+  box-shadow: 0 5px 15px -10px rgba(31, 18, 53, 0.6);
+  /* Cambia il colore di sfondo del pulsante di invio */
+}
