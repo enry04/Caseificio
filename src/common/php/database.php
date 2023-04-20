@@ -10,7 +10,7 @@ if (!isset($_SESSION['pwd'])) {
     $_SESSION['pwd'] = "";
 }
 if (!isset($_SESSION['db'])) {
-    $_SESSION['db'] = "caseificio";
+    $_SESSION['db'] = "caseificiovisentin";
 }
 
 $db = mysqli_connect($_SESSION['address'], $_SESSION['user'], $_SESSION['pwd'], $_SESSION['db']) or die("Error 418: I'm a teapot!");

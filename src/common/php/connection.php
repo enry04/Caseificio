@@ -2,7 +2,7 @@
 class ConnectionMySQL
 {
     private const host = '127.0.0.1:3306';
-    private const db = 'caseificio';
+    private const db = 'caseificiovisentin';
     private const user = 'root';
     private const pass = '';
     private const charset = 'utf8mb4';
